@@ -1,0 +1,10 @@
+<%- include('partials/head'); %>
+<body>
+    <h1>Meus contatos!</h1>
+    <ul>
+        <% for(let contato of contatos) { %>
+            <li><%= contato %></li>
+        <% } %>
+    </ul>
+</body>
+</html>

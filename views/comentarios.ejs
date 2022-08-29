@@ -1,0 +1,21 @@
+<%- include('partials/head'); %>
+<body>
+    <h1>Comentários postados!</h1>
+    <ul>
+        <% for(let comentario of comentarios) { %>
+            <li><strong><%= comentario.nome %></strong>: <%= comentario.msg %></li>
+        <% } %>
+    </ul>
+
+    <form action="" method="post">
+        <p>
+            <label>Nome: <input name="nome" type="text"></label>
+        </p>
+        <p>
+            <label>Escreva seu recado: <textarea name="msg"></textarea></label>
+        </p>
+        <button type="submit">Postar</button>
+    </form>
+
+</body>
+</html>

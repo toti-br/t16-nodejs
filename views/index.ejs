@@ -1,0 +1,15 @@
+<%- include('partials/head'); %>
+<body>
+    <h1>Homepage!</h1>
+
+    <% if (nome) { %>
+        <p>Olá, <%= nome %>! Ainda bem que você visitou meu site!</p>
+    <% } else { %>
+        <form action="" method="get">
+            <label>Qual é seu nome, visitante? <input name="nome" type="text"></label>
+        </form>
+    <% } %>
+
+    <p>Olá, do EJS</p>
+</body>
+</html>
